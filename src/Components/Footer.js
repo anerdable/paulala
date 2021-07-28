@@ -1,10 +1,12 @@
-function Footer() {
+import React from "react";
+
+export const Footer = () => {
   return (
-    <footer class="Footer">
-      <div class="content has-text-centered">
-        <p>2021 Copyright @ All rights reserved</p>
+    <footer className="footer">
+      <div className="content has-text-centered">
+        <p>{new Date().getFullYear()} Copyright @ All rights reserved</p>
       </div>
     </footer>
   );
-}
+};
 export default Footer;

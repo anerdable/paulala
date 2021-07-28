@@ -1,9 +1,9 @@
 import React from "react";
 
-export const Home = props => {
+export const Home = (props) => {
   return (
-    <div>
-      <h1>HOME</h1>
+    <div className="Main-content">
+      <h1>PAULA D'CRUZ</h1>
     </div>
   );
 };
