@@ -1,7 +1,7 @@
 import React from "react";
 import headline_photo from "../images/headline_photo.png";
 
-function MainContent() {
+export const MainContent = (props) => {
   return (
     <div className="MainContent">
       <p>Hej, världen!</p>
@@ -16,6 +16,6 @@ function MainContent() {
       </div>
     </div>
   );
-}
+};
 
 export default MainContent;

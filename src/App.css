@@ -5,11 +5,10 @@
   opacity: 100%;
   color: black;
   font-size: calc(10px + 2vmin);
-  display: flex;
   height: 100vh;
 }
 
-.App-footer {
+.footer {
   position: fixed;
   bottom: 0;
   letter-spacing: 0.3em;
@@ -20,19 +19,9 @@
   width: 100%;
 }
 
-.App-header {
-  position: fixed;
-  top: 0;
-  letter-spacing: 0.2em;
-  font-size: 16px;
-  background-color: #c78f58;
-  color: #43281C;
-  opacity: 50%;
-  width: 100%;
-}
-
 .Main-content {
   width: 100%;
+  position: relative;
 }
 
 .App-link {
@@ -73,5 +62,57 @@
   }
   50% {
     border-color: purple
+  }
+}
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+  position: relative;
+  background-color: #c78f58;
+  overflow: hidden;
+  opacity: 80%;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+  float: left;
+  color: #43281C;
+  text-align: center;
+  padding: 2px 14px;
+  text-decoration: none;
+  font-family: 'Helvetica Neue';
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .2em;
+  font-weight: 600;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+  color: black;
+}
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
   }
 }
