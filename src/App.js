@@ -1,12 +1,19 @@
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import MainContent from "./Components/MainContent";
+import React from "react";
 import "./App.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Home } from "./Pages/Home";
+import { About } from "./Pages/About";
 
 function App() {
   return (
     <div className="App">
-      <div className="App-header">
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/About" component={About} />
+        </Switch>
+      </BrowserRouter>
+      {/* <div className="App-header">
         <Header />
       </div>
       <div className="Main-content">
@@ -14,7 +21,7 @@ function App() {
       </div>
       <div className="App-footer">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }
